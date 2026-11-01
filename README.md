@@ -59,9 +59,6 @@ export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 - 提示音：使用 macOS 系统自带音效，无第三方音频素材，无版权风险
 - 本项目不依赖任何第三方库或素材
 
-## 路线图
+<img width="872" height="612" alt="截屏2026-11-01 21 18 06" src="https://github.com/user-attachments/assets/842a579d-bd5c-43f8-9c6f-305c851e47c5" />
+<img width="872" height="661" alt="截屏2026-11-01 21 18 14" src="https://github.com/user-attachments/assets/27fd5c55-df75-4c0c-9240-3dc39a86d9cb" />
 
-- [ ] 统计图表（按天 / 周回顾专注数据）
-- [ ] 自定义背景与表盘样式
-- [ ] 世界时钟
-- [ ] Windows / 安卓版本（保持跨平台功能一致）
