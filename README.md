@@ -1,2 +1,67 @@
-# FocusClock
+# FocusClock 🍅
+
 一款简洁高效的 macOS 番茄钟应用：**任务管理 + 专注计时**，帮你把每一件任务切成一个个专注的番茄。
+
+![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-1.0.0-red)
+
+## 功能特性
+
+### ⏱ 专注计时
+- 标准番茄工作法：专注 → 短休息 → 每 4 个番茄后长休息
+- 所有时长均可自定义（专注 / 短休 / 长休 / 长休间隔）
+- **中间休息**：长时间专注中途自动插入几分钟休息，保留进度，休完自动继续
+- 圆环进度 + 大字倒计时，空格键快捷开始 / 暂停
+- 支持跳过、重置当前阶段
+- 可配置阶段自动衔接（专注后自动休息、休息后自动专注）
+
+### ✅ 任务管理
+- 任务增删改、勾选完成、预估番茄数
+- 点击任务设为「当前专注」，每完成一个番茄自动累计到该任务
+- 今日番茄数实时统计
+
+### 🔔 提醒与常驻
+- 阶段结束播放系统提示音 + 推送系统通知（无版权问题的系统音效）
+- 菜单栏常驻图标，实时显示当前阶段与剩余时间，可快速控制
+
+### 💾 数据存储
+- 任务、统计、设置全部本地持久化，保存在
+  `~/Library/Application Support/FocusClock/`
+- 无网络请求、无账号、无数据收集，隐私完全离线
+
+## 安装
+
+1. 下载 `FocusClock-1.0.0.dmg`
+2. 双击打开，将 **FocusClock.app** 拖入 **Applications** 文件夹
+3. 首次启动如提示"未经验证的开发者"，前往
+   **系统设置 → 隐私与安全性 → 仍要打开**
+
+## 系统要求
+
+- macOS 13.0 (Ventura) 或更高版本
+- Apple Silicon / Intel 均可（当前构建为 arm64）
+
+## 从源码构建
+
+```bash
+# 需要完整 Xcode（非 Command Line Tools）
+export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift build
+```
+
+产物为 `.build/debug/FocusClock`，可参考仓库中的打包流程生成 `.app` 与 DMG。
+
+## 版权与许可
+
+- 代码：[MIT License](LICENSE)，Copyright © 2026 **Zohan Lee**
+- 应用图标：为本项目原创生成，归 Zohan Lee 所有，随项目以 MIT 许可发布
+- 提示音：使用 macOS 系统自带音效，无第三方音频素材，无版权风险
+- 本项目不依赖任何第三方库或素材
+
+## 路线图
+
+- [ ] 统计图表（按天 / 周回顾专注数据）
+- [ ] 自定义背景与表盘样式
+- [ ] 世界时钟
+- [ ] Windows / 安卓版本（保持跨平台功能一致）
