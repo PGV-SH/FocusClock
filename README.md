@@ -4,7 +4,7 @@ A clean, refined Pomodoro app for macOS that combines **task management with a f
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.1.0-red)
+![Version](https://img.shields.io/badge/version-1.2.0-red)
 
 **English | [中文](README.zh-CN.md)**
 
@@ -17,11 +17,17 @@ A clean, refined Pomodoro app for macOS that combines **task management with a f
 - Gradient glowing progress ring with a large countdown; press Space to start/pause, skip or reset any phase
 - Small dots show progress toward the next long break
 - Optional auto-chaining (auto-start breaks after focus, auto-start focus after breaks)
+- **Tomato mascot**: blinks while you focus, sleeps during breaks, and laughs with confetti when a pomodoro is done
 
 ### ✅ Task Management
 - Card-style task list: add, rename, delete, check off, estimated pomodoros
 - Click a task to make it the current focus; each completed pomodoro is automatically counted toward it
 - Live count of today's completed pomodoros
+- **Future planning**: schedule tasks up to 14 days ahead, browse by date, reschedule from the task menu
+
+### 🎯 Goals & Stats
+- **Daily goal**: set a target number of pomodoros, watch progress update live, get a badge when you reach it
+- **Last 7 days**: a mini bar chart recaps your daily completions, with today highlighted
 
 ### 🌍 Language & Appearance
 - **Bilingual UI (中文 / English)**: follow system language or switch manually; notifications are localized too
@@ -29,7 +35,7 @@ A clean, refined Pomodoro app for macOS that combines **task management with a f
 - Refined borderless window design with a subtle phase-colored ambient glow
 
 ### 🔔 Alerts & Menu Bar
-- System sound + native notification when a phase ends (built-in macOS sounds, no licensing concerns)
+- System sound + native notification when a phase ends (13 built-in macOS sounds, no licensing concerns)
 - Lives in the menu bar with a live countdown and quick controls
 
 ### 💾 Data Storage
@@ -39,7 +45,7 @@ A clean, refined Pomodoro app for macOS that combines **task management with a f
 
 ## Installation
 
-1. Download `FocusClock-1.1.0.dmg` from [Releases](../../releases)
+1. Download `FocusClock-1.2.0.dmg` from [Releases](../../releases)
 2. Open it and drag **FocusClock.app** into **Applications**
 3. If macOS warns about an unverified developer on first launch, go to
    **System Settings → Privacy & Security → Open Anyway**
@@ -70,7 +76,3 @@ The binary is produced at `.build/debug/FocusClock`; see the packaging flow in t
 - [ ] Custom backgrounds and dial styles
 - [ ] World clock
 - [ ] Windows / Android versions (feature parity across platforms)
-<img width="338" height="240" alt="截屏2026-11-02 17 27 02" src="https://github.com/user-attachments/assets/a69d09cc-7e01-4e50-945f-d59c3ea03ce3" />
-<img width="912" height="652" alt="截屏2026-11-02 17 26 50" src="https://github.com/user-attachments/assets/f3f3d005-e60e-4140-bace-f9dcd8e7495f" />
-<img width="912" height="733" alt="截屏2026-11-02 17 26 56" src="https://github.com/user-attachments/assets/15cffebe-755f-4a3b-bec8-5076ebfc11f2" />
-
