@@ -76,3 +76,6 @@ The binary is produced at `.build/debug/FocusClock`; see the packaging flow in t
 - [ ] Custom backgrounds and dial styles
 - [ ] World clock
 - [ ] Windows / Android versions (feature parity across platforms)
+<img width="912" height="652" alt="截屏2026-11-02 18 55 53" src="https://github.com/user-attachments/assets/5556f1cd-c1ef-429d-b47a-d651c5566911" />
+<img width="912" height="772" alt="截屏2026-11-02 18 55 57" src="https://github.com/user-attachments/assets/bf5b71e6-f3c0-4298-9c08-b90842eea942" />
+<img width="346" height="232" alt="截屏2026-11-02 18 56 01" src="https://github.com/user-attachments/assets/6d3e70ce-cd6a-4289-b17c-dcd8ade2e42a" />
