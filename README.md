@@ -1,64 +1,72 @@
 # FocusClock 🍅
 
-一款简洁高效的 macOS 番茄钟应用：**任务管理 + 专注计时**，帮你把每一件任务切成一个个专注的番茄。
+A clean, refined Pomodoro app for macOS that combines **task management with a focus timer**, turning every task into focused pomodoros.
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.0-red)
+![Version](https://img.shields.io/badge/version-1.1.0-red)
 
-## 功能特性
+**English | [中文](README.zh-CN.md)**
 
-### ⏱ 专注计时
-- 标准番茄工作法：专注 → 短休息 → 每 4 个番茄后长休息
-- 所有时长均可自定义（专注 / 短休 / 长休 / 长休间隔）
-- **中间休息**：长时间专注中途自动插入几分钟休息，保留进度，休完自动继续
-- 圆环进度 + 大字倒计时，空格键快捷开始 / 暂停
-- 支持跳过、重置当前阶段
-- 可配置阶段自动衔接（专注后自动休息、休息后自动专注）
+## Features
 
-### ✅ 任务管理
-- 任务增删改、勾选完成、预估番茄数
-- 点击任务设为「当前专注」，每完成一个番茄自动累计到该任务
-- 今日番茄数实时统计
+### ⏱ Focus Timer
+- Classic Pomodoro technique: focus → short break → long break every 4 pomodoros
+- Fully customizable durations (focus / short break / long break / long-break interval)
+- **Mid-break**: automatically inserts a short break during long focus sessions, preserving your progress and resuming afterwards
+- Gradient glowing progress ring with a large countdown; press Space to start/pause, skip or reset any phase
+- Small dots show progress toward the next long break
+- Optional auto-chaining (auto-start breaks after focus, auto-start focus after breaks)
 
-### 🔔 提醒与常驻
-- 阶段结束播放系统提示音 + 推送系统通知（无版权问题的系统音效）
-- 菜单栏常驻图标，实时显示当前阶段与剩余时间，可快速控制
+### ✅ Task Management
+- Card-style task list: add, rename, delete, check off, estimated pomodoros
+- Click a task to make it the current focus; each completed pomodoro is automatically counted toward it
+- Live count of today's completed pomodoros
 
-### 💾 数据存储
-- 任务、统计、设置全部本地持久化，保存在
+### 🌍 Language & Appearance
+- **Bilingual UI (中文 / English)**: follow system language or switch manually; notifications are localized too
+- **Dark mode**: follow system / light / dark, with colors fully adaptive
+- Refined borderless window design with a subtle phase-colored ambient glow
+
+### 🔔 Alerts & Menu Bar
+- System sound + native notification when a phase ends (built-in macOS sounds, no licensing concerns)
+- Lives in the menu bar with a live countdown and quick controls
+
+### 💾 Data Storage
+- Tasks, statistics and settings are persisted locally in
   `~/Library/Application Support/FocusClock/`
-- 无网络请求、无账号、无数据收集，隐私完全离线
+- No network requests, no accounts, no data collection — fully offline and private
 
-## 安装
+## Installation
 
-1. 下载 `FocusClock-1.0.0.dmg`
-2. 双击打开，将 **FocusClock.app** 拖入 **Applications** 文件夹
-3. 首次启动如提示"未经验证的开发者"，前往
-   **系统设置 → 隐私与安全性 → 仍要打开**
+1. Download `FocusClock-1.1.0.dmg` from [Releases](../../releases)
+2. Open it and drag **FocusClock.app** into **Applications**
+3. If macOS warns about an unverified developer on first launch, go to
+   **System Settings → Privacy & Security → Open Anyway**
 
-## 系统要求
+## Requirements
 
-- macOS 13.0 (Ventura) 或更高版本
-- Apple Silicon / Intel 均可（当前构建为 arm64）
+- macOS 13.0 (Ventura) or later
+- Apple Silicon / Intel (current build is arm64)
 
-## 从源码构建
+## Build from Source
 
 ```bash
-# 需要完整 Xcode（非 Command Line Tools）
-export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift build
+swift build
 ```
 
-产物为 `.build/debug/FocusClock`，可参考仓库中的打包流程生成 `.app` 与 DMG。
+The binary is produced at `.build/debug/FocusClock`; see the packaging flow in this repo to generate the `.app` bundle and DMG.
 
-## 版权与许可
+## Copyright & License
 
-- 代码：[MIT License](LICENSE)，Copyright © 2026 **Zohan Lee**
-- 应用图标：为本项目原创生成，归 Zohan Lee 所有，随项目以 MIT 许可发布
-- 提示音：使用 macOS 系统自带音效，无第三方音频素材，无版权风险
-- 本项目不依赖任何第三方库或素材
+- Code: [MIT License](LICENSE), Copyright © 2026 **Zohan Lee**
+- App icon: originally generated for this project, owned by Zohan Lee, released under MIT
+- Sounds: built-in macOS system sounds only — no third-party audio, no licensing risk
+- No third-party libraries or assets
 
-<img width="872" height="612" alt="截屏2026-11-01 21 18 06" src="https://github.com/user-attachments/assets/842a579d-bd5c-43f8-9c6f-305c851e47c5" />
-<img width="872" height="661" alt="截屏2026-11-01 21 18 14" src="https://github.com/user-attachments/assets/27fd5c55-df75-4c0c-9240-3dc39a86d9cb" />
+## Roadmap
 
+- [ ] Statistics charts (daily / weekly focus review)
+- [ ] Custom backgrounds and dial styles
+- [ ] World clock
+- [ ] Windows / Android versions (feature parity across platforms)
