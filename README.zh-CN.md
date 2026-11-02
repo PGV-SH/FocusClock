@@ -76,3 +76,6 @@ swift build
 - [ ] 自定义背景与表盘样式
 - [ ] 世界时钟
 - [ ] Windows / 安卓版本（保持跨平台功能一致）
+<img width="912" height="652" alt="截屏2026-11-02 18 55 53" src="https://github.com/user-attachments/assets/ec04e745-9435-44cb-9ed3-0f52f68317be" />
+<img width="912" height="772" alt="截屏2026-11-02 18 55 57" src="https://github.com/user-attachments/assets/ae86b9a3-e365-4bd6-a6c2-10041b78f15f" />
+<img width="346" height="232" alt="截屏2026-11-02 18 56 01" src="https://github.com/user-attachments/assets/fd00ae91-ae49-4553-8fc4-39fc0e98c036" />
